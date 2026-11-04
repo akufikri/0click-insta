@@ -1,0 +1,15 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Cursor fixture</title></head>
+<body style="margin:0;height:100vh">
+  <div id="anchor" style="position:absolute;left:13px;top:23px;width:28px;height:28px;border:2px solid #888;border-radius:3px"></div>
+  <script>
+    window.__moves = [];
+    window.__clicks = [];
+    document.addEventListener('mousemove', (event) => {
+      window.__moves.push({ x: Math.round(event.clientX), y: Math.round(event.clientY), t: Math.round(performance.now()) });
+    }, true);
+    document.addEventListener('mousedown', (event) => {
+      window.__clicks.push({ x: Math.round(event.clientX), y: Math.round(event.clientY) });
+    }, true);
+  </script>
+</body></html>

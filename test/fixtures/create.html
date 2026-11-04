@@ -1,0 +1,29 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Fixture Create</title></head>
+<body>
+  <a href="/create/select/" id="create" onclick="openDialog(event)">Create</a>
+  <div id="host"></div>
+  <script>
+    window.state = { step: 1, files: 0, caption: '', shared: false };
+    function openDialog(event) {
+      event.preventDefault();
+      document.getElementById('host').innerHTML = `
+        <div role="dialog">
+          <input type="file" multiple onchange="window.state.files = this.files.length; document.getElementById('panel').textContent = 'picked ' + this.files.length;">
+          <p id="panel">step 1</p>
+          <div role="button" id="next" onclick="window.state.step = 2; document.getElementById('panel2').textContent = 'step 2';">Next</div>
+          <textarea aria-label="Write a caption..."></textarea>
+          <div role="button" id="share" onclick="share()">Share</div>
+          <p id="panel2"></p>
+        </div>`;
+      window.state.dialogOpen = true;
+    }
+    function share() {
+      const caption = document.querySelector('div[role="dialog"] textarea')?.value || '';
+      window.state.caption = caption;
+      window.state.shared = caption.length > 0;
+      const dialog = document.querySelector('div[role="dialog"]');
+      dialog.insertAdjacentHTML('beforeend', '<p>Your post has been shared</p><a href="/p/FIXTURE0001/">view</a>');
+    }
+  </script>
+</body></html>

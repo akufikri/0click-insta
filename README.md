@@ -1,16 +1,4 @@
-```
-┌────────────────────────────────────────────────────────────────┐
-│                                                                │
-│    ___         _  _        _      ___              _           │
-│   / _ \   ___ | |(_)  ___ | | __ |_ _| _ __   ___ | |_  __ _   │
-│  | | | | / __|| || | / __|| |/ /  | | | '_ \ / __|| __|/ _` |  │
-│  | |_| || (__ | || || (__ |   <   | | | | | |\__ \| |_| (_| |  │
-│   \___/  \___||_||_| \___||_|\_\ |___||_| |_||___/ \__|\__,_|  │
-│                                                                │
-└────────────────────────────────────────────────────────────────┘
-```
-
-# 0click-insta
+# <img width="40" height="40" alt="Gemini_Generated_Image_nerpb8nerpb8nerp-removebg-preview" src="https://github.com/user-attachments/assets/caa14729-0fe6-4d29-96db-f3fc496ac58c" /> 0click-insta
 
 Instagram MCP server that drives the browser you already have open in a terminal pane. One device = one Instagram account = one terminal-browser daemon, one cookie jar, one profile directory. Accounts stay logged in, run side by side, never share state.
 

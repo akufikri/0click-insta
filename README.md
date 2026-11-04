@@ -223,6 +223,16 @@ Measured on a logged-in device (2026-11-04):
 | legacy `POST /api/v1/friendships/destroy/<id>/` | dead: HTTP 200 with `content-type: text/html`, nothing unfollowed |
 | guarded bulk unfollow | candidates verified with `followed_by` per account before acting, so accounts that follow back are never touched |
 
+## License
+
+Apache-2.0 — see [LICENSE](LICENSE) and [NOTICE](NOTICE).
+
+```
+Copyright 2026 Fikri Nurhakim (akufikri)
+```
+
+Why Apache-2.0 and not MIT: it keeps every copyright and attribution notice intact when someone redistributes this, adds an explicit patent grant (and kills that grant if they sue over patents), and withholds trademark rights over the project name — while still allowing commercial and closed-source use. If you would rather forbid running a modified copy as a hosted service, AGPL-3.0 is the drop-in alternative: replace `LICENSE` with the AGPL text and set `"license": "AGPL-3.0-only"`.
+
 ## Notes
 
 - `story_upload` is honest: desktop web does not expose story upload for most accounts, so it returns `Unsupported` rather than a fake success.

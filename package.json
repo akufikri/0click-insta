@@ -21,9 +21,10 @@
     "@types/node": "^24"
   },
   "description": "Instagram MCP server driving a terminal-pane browser, with per-device isolation and an inspector for selector maps",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/akufikri/0click-insta.git"
-  }
+  },
+  "author": "Fikri Nurhakim (https://github.com/akufikri)"
 }

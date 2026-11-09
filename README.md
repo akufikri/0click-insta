@@ -5,6 +5,7 @@ Instagram MCP server that drives the browser you already have open in a terminal
 [![MCP](https://img.shields.io/badge/MCP-stdio-111)](https://modelcontextprotocol.io)
 [![Node](https://img.shields.io/badge/node-26%2B-339933)](https://nodejs.org)
 [![Tests](https://img.shields.io/badge/tests-16%20passing-brightgreen)](#verification)
+[![M8ven Verified](https://m8ven.ai/badge/mcp/akufikri-0click-insta-87mdbl?variant=verified&v=e6a4ff54b88cba08a416470ad283f336)](https://m8ven.ai/mcp/akufikri-0click-insta-87mdbl?s=readme)
 
 MCP server that drives Instagram **through the browser you already have in a terminal pane**. One device = one Instagram account = one terminal-browser daemon + its own cookie jar + its own profile directory. Accounts stay logged in, live side by side, and never share state.
 
